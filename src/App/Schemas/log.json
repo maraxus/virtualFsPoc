@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://localhost/virtualfs/schema/log.json",
+
+  "type": "object",
+  "properties": {
+    "sessionId": {
+      "type": "string"
+    },
+    "operation": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fileId": {
+      "type": "number"
+    },
+    "cabinetId": {
+      "type": "number"
+    }
+  },
+  "required": ["cabinetId", "fileId", "time", "operation", "sessionId"],
+
+  "additionalProperties": false
+}
