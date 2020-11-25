@@ -1,0 +1,10 @@
+version: "3"
+services:
+
+  http:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - .:/var/www/html
+      - ./environment/nginx/:/etc/nginx/conf.d/
